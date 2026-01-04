@@ -1,6 +1,133 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: https://ogp.me/ns#">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="本ページでは、私、kaliz181216の自己紹介や制作物の公開をしています。 ">
+	<title>kaliz181216 Home</title>
+
+	<!-- ogp -->
+	<meta property="og:url" content="https://kaliz181216.github.io/fictional_apple">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="kaliz181216 Home">
+	<meta property="og:description"
+		content=" 本ページでは、私、kaliz181216の自己紹介や制作物の公開をしています。">
+	<meta property="og:site_name" content="kaliz181216">
+	<meta property="og:image" content="https://kaliz181216.github.io/fictional_apple/assets/images/main-ogp.jpg">
+
+	<!-- favicon apple-touch-icon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="assets/images/android-chrome-256x256.png">
+
+	<!-- web font Noto Serif JP, Lora -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+	<!-- css -->
+<!--
+	<link rel="stylesheet" href="assets/css/destyle.min.css">
+	<link rel="stylesheet" href="assets/css/common.css">
+-->
+<link rel="stylesheet" href="assets/css/top.css">
+</head>
+
 <body>
-	first commit
- this is test.
+	<header>
+    <img class="logo" src="assets/images/logo.jpg" alt="">
+    <img class="tmp" src="assets/images/menu.svg" alt="menubtn">
+  </header>
+  <main>
+    <section class="section section--mv">
+      <h1 class="mv__header">kaliz181216<br>Home</h1>
+      <img class="tmp" src="assets/images/mv181216.jpg" alt="kaliz181216 Home">
+      <div class="introduction">本ページでは、私、kaliz181216の自己紹介や制作物の公開をしています。</div>
+      <a href="#works">View Works</a>
+    </section>
+
+    <section id="about" class="section section--gray  section--about">
+      <h2 class="section__header">About</h2>
+      <p class="section__body section__body--about">大学卒業後、公務員として防災関係の業務を担当し、業務の傍らで防災情報の監視用アプリケーションの開発やサーバーの管理をしました。4年で本部組織に異動となり、引き続き2年間、開発関連業務を担当後、システム管理者になりました。</p>
+      <p>システム管理者としていくつかのシステム更新に関わる中で、より良いシステムを作るためにシステムデザインに関わる仕事がしたいと思い、退職。社会人向け専門学校でWebデザインを学びました。</p>
+    </section>
+
+    <section id="skills" class="section section--skills">
+      <h2 class="section__header">Skills</h2>
+      <div class="section__body section__body--skills">
+        <div class="skills__content">
+          <div class="skills__topic">
+            <img class="tmp" src="assets/images/code.svg" alt="IT icon"><h3>IT Skill</h3>
+          </div>
+          <dl class="skills__details">
+            <dt class="skills__item">システム管理</dt>
+            <dd class="skills__detail">システム管理者として、要件定義から構築、整備、運用までシステム管理の各プロセスを経験しました。</dd>
+            <dt class="skills__item">システム開発</dt>
+            <dd class="skills__detail">HTML, CSSはもちろんのこと、PHPによるバックエンド開発からJavaScriptによるフロントエンド開発まで一貫して担当しました。</dd>
+          </dl>
+        </div>
+
+        <div class="skills__content">
+          <div class="skills__topic">
+            <img class="tmp" src="assets/images/design.svg" alt="design icon"><h3>Design Skill</h3>
+          </div>
+          <dl class="skills__details">
+            <dt class="skills__item">デザイン制作</dt>
+            <dd class="skills__detail">もとは趣味でGIMP,CLIP STUDIOを使ってイラストなどを制作していました。退職後は専門学校でPhotoshop, Illustrator, Figmaを使ってバナーやデザインカンプを制作しました。</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section section--gray section--works">
+      <h2 class="section__header">Works</h2>
+      <div class="section__body section__body--works">
+        <article class="works__article">
+          <a class="works__link"><img class="tmp" src="assets/images/apple_screenshot_pc.jpg" alt="企業デモサイトイメージ"></a>
+          <h3 class="works__topic">企業デモサイト</h3>
+          <p>架空の企業のWebサイト。ネット通販の拡大や直営ショップへの集客が目的という設定で作成しました。</p>
+          <!--タグはvueで作りたい-->
+          <ul class="works__tags">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+        <article class="works__article">
+          <a class="works__link" href="#"><img class="tmp" src="" alt="kaliz181216 Home"></a>
+          <h3 class="works__topic">kaliz181216 Home</h3>
+          <p>私の個人サイト。仕事用なのでシンプルでビジネスライクなデザインにしました。</p>
+          <!--タグはvueで作りたい-->
+          <ul class="works__tags">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Vue.js</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <!--contact-->
+    <section id="contact"  class="section section--contact">
+      <h2 class="section__header">Contact</h2>
+      <div class="section__body section__body--works">
+        <div class="contact__txt">
+          <p>転職サイトにて就職活動を行っております。転職サイト経由でご連絡いただけますと幸いです。</p>
+          <p>制作物のソースコードはGitHubで公開しています。</p>
+        </div>
+        <div class="contact__github">
+          <img class="tmp" src="assets/images/github.svg" alt="github">
+          <ul class="contact__account">
+            <li>kaliz181216@GitHub</li>
+            <li><a href="https://github.com/kaliz181216">https://github.com/kaliz181216</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <small>&copy;kaliz181216 All rights reserved.</small>
+  </footer>
+
+
 </body>
 </html>
