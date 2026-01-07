@@ -31,15 +31,8 @@ img {
   color: blue;
 }
 
-/* 仮画像 */
-.tmp {
-  display: block;
-  width: 100%;
-  background-color: #dddddd;
-}
-
 /* ========== header ========== */
-header {
+.gheader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,9 +44,43 @@ header {
   width: 100px;
 }
 
-.header__btn {
+.nav__pc{
+  display: none;
+}
+
+.nav__sp {
   width: 24px;
   height: 24px;
+}
+
+.nav__list{
+  margin-top: 30px;
+}
+
+.nav__item{
+  margin: 15px 20px;
+  font-size: 2.0rem;
+  font-weight: 500;
+}
+
+.nav__modal {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.navtr-enter-from,
+.navtr-leave-to {
+  transform: translateX(-100%);
+}
+
+.navtr-enter-active,
+.navtr-leave-active {
+  transition: all 0.4s;
 }
 
 /* ========== section 共通 ========== */
@@ -220,12 +247,8 @@ header {
   padding: 5px;
 }
 
-/* .contact__account {
-  font-size: 0.85rem;
-} */
-
 /* ========== footer ========== */
-footer {
+.gfooter {
   padding: 10px var(--contentPadding);
   border-top: 1px solid black;
   font-size: 1.2rem;
@@ -255,22 +278,27 @@ footer {
   }
 
   /* ===== header ===== */
-  header {
+  .gheader {
     padding: 20px 50px;
   }
 
   /* PCではメニューボタン非表示 */
-  .header__btn {
+  .nav__sp {
     display: none;
+  }
+
+  .nav__pc{
+    display: block;
   }
 
   .nav__list{
     display: flex;
     gap: 50px;
+    margin-top: 0;
   }
 
   .nav__item{
-    font-weight: 500;
+    margin: 0;
   }
 
   /* ===== main visual ===== */
@@ -367,7 +395,7 @@ footer {
   }
 
   /* ===== footer ===== */
-  footer {
+  .gfooter {
     padding: 20px 50px;
     font-size: 1.5rem;
   }
