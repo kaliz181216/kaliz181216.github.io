@@ -29,17 +29,12 @@
 
   <!-- css -->
   <link rel="stylesheet" href="assets/css/destyle.min.css">
-  <!--
 	<link rel="stylesheet" href="assets/css/common.css">
--->
   <link rel="stylesheet" href="assets/css/top.css">
 </head>
 
 <body>
-  <header class="gheader">
-    <img class="logo" src="assets/images/logo.jpg" alt="">
-    <nav id="nav"></nav>
-  </header>
+  <header id="header" class="gheader"></header>
   <main>
     <section class="section section--mv">
       <h1 class="mv__header">kaliz181216<br>Home</h1>
@@ -56,7 +51,7 @@
         <p>
           大学卒業後、公務員として防災関係の業務を担当し、業務の傍らで防災情報の監視用アプリケーションの開発やサーバーの管理をしました。4年で本部組織に異動となり、引き続き2年間、開発関連業務を担当後、システム管理者になりました。
         </p>
-        <p>システム管理者としていくつかのシステム更新に関わる中で、より良いシステムを作るためにシステムデザインに関わる仕事がしたいと思い、退職。社会人向け専門学校でWebデザインを学びました。</p>
+        <p class="para-mt15">システム管理者としていくつかのシステム更新に関わる中で、より良いシステムを作るためにシステムデザインに関わる仕事がしたいと思い、退職。社会人向け専門学校でWebデザインを学びました。</p>
       </div>
     </section>
 
@@ -70,12 +65,7 @@
             </div>
             <h3>IT Skill</h3>
           </div>
-          <dl class="skills__details">
-            <dt class="skills__item">システム管理</dt>
-            <dd class="skills__detail">システム管理者として、要件定義から構築、整備、運用までシステム管理の各プロセスを経験しました。</dd>
-            <dt class="skills__item">システム開発</dt>
-            <dd class="skills__detail">HTML, CSSはもちろんのこと、PHPによるバックエンド開発からJavaScriptによるフロントエンド開発まで一貫して担当しました。</dd>
-          </dl>
+          <dl id="itskills"></dl>
         </div>
 
         <div class="skills__content">
@@ -85,42 +75,16 @@
             </div>
             <h3>Design Skill</h3>
           </div>
-          <dl class="skills__details">
-            <dt class="skills__item">デザイン制作</dt>
-            <dd class="skills__detail">もとは趣味でGIMP,CLIP STUDIOを使ってイラストなどを制作していました。退職後は専門学校でPhotoshop, Illustrator,
-              Figmaを使ってバナーやデザインカンプを制作しました。</dd>
-          </dl>
+          <dl id="designskills"></dl>
         </div>
       </div>
     </section>
 
     <section id="works" class="section section--gray section--works">
       <h2 class="section__header">Works</h2>
-      <div class="section__body section__body--works">
-        <article class="works__article">
-          <a class="works__link" href="fictional_apple/"><img src="assets/images/apple_screenshot_pc.jpg"
-              alt="企業デモサイトイメージ"></a>
-          <h3 class="works__topic">企業デモサイト</h3>
-          <p>架空の企業のWebサイト。ネット通販の拡大や直営ショップへの集客が目的という設定で作成しました。</p>
-          <!--タグはvueで作りたい-->
-          <ul class="works__tags">
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </article>
-        <article class="works__article">
-          <a class="works__link" href="#"><img src="assets/images/home_screenshot.jpg" alt="kaliz181216 Home"></a>
-          <h3 class="works__topic">kaliz181216 Home</h3>
-          <p>私の個人サイト。仕事用なのでシンプルでビジネスライクなデザインにしました。</p>
-          <!--タグはvueで作りたい-->
-          <ul class="works__tags">
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Vue.js</li>
-          </ul>
-        </article>
-      </div>
+      <div id="works__articles" class="section__body section__body--works"></div>
     </section>
+
     <!--contact-->
     <section id="contact" class="section section--contact">
       <h2 class="section__header">Contact</h2>
@@ -140,11 +104,10 @@
       </div>
     </section>
   </main>
-  <footer class="gfooter">
-    <small>&copy;kaliz181216 All rights reserved.</small>
-  </footer>
+  <footer id="footer" class="gfooter"></footer>
 
-  <script type="module" src="assets/js/main.mjs"></script>
+  <script type="module" src="assets/js/common.mjs"></script>
+  <script type="module" src="assets/js/top.mjs"></script>
 </body>
 
 </html>

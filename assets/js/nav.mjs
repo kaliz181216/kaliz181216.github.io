@@ -1,9 +1,9 @@
-import { createApp, ref} from "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+import {ref, reactive} from "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
 
-createApp({
+export default {
     setup() {
         const shownav = ref(false)
-        const menulist = ref([
+        const menulist = reactive([
             {menu: 'About', link: 'index.html#about'},
             {menu: 'Skills', link: 'index.html#skills'},
             {menu: 'Works', link: 'index.html#works'},
@@ -45,4 +45,4 @@ createApp({
             </ul>
         </div>
     `
-}).mount('#nav');
+}
