@@ -31,7 +31,6 @@ createApp({
 }).mount("#designskills");
 
 
-
 //works__articles
 createApp({
     setup(){
@@ -40,7 +39,7 @@ createApp({
                 id: 1,
                 topic: '企業デモサイト',
                 link: 'fictional_apple/',
-                img: 'assets/images/apple_screenshot_pc.jpg',
+                img: 'assets/images/work1/apple_screenshot_pc.jpg',
                 description: '架空の企業のWebサイト。ネット通販の拡大や直営ショップへの集客が目的という設定で作成しました。',
                 tags: ['HTML/CSS','JavaScript']
             },

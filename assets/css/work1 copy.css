@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/* =============================
+   work1 page (SP)
+============================= */
+
+/* 仮画像 */
+.tmp {
+    width: 100%;
+    background-color: #dddddd;
+}
+
+/* ========== Intro ========== */
+.section--intro{
+    padding-top: 30px;
+}
+
+.intro__topic {
+    font-size: 2.0rem;
+    font-weight: 500;
+    transform:translateX(-13px);
+}
+
+.intro__link {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #666;
+    word-break: break-all;
+}
+
+.intro__mv {
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.intro__comments{
+    margin-top: 25px;
+}
+
+.intro__commenttopic{
+    margin-top: 20px;
+}
+
+.intro__comment--list::before{
+    content: "・";
+}
+
+/* ========== survey ========== */
+.detail__topic--survey {
+    margin-top: 30px;
+}
+
+.survey__graph {
+    margin-top: 30px;
+}
+
+.survey__graph .tmp {
+    height: 180px;
+}
+
+.survey__graphcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.survey__graphref {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--darkgray);
+}
+
+.survey__wordtype {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.survey__worddetail {
+    margin-top: 8px;
+    color: #555;
+}
+
+.detail__body ul {
+    margin-top: 15px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.detail__body li {
+    margin-top: 8px;
+}
+
+/* ========== work ========== */
+.detail__topic--work {
+    margin-top: 30px;
+}
+
+.work__content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.work__image {
+    width: 50%;
+}
+
+.work__text {
+    font-size: 1.2rem;
+}
+
+.work__content--ai {
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.work__image--ai{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.work__image--ai img{
+    width: 45%;
+}
+
+.work__text--ai{
+    font-size: 1.4rem;
+}
+
+/* ========== thanks ========== */
+.thanks__name{
+    margin-top: 5px;
+}
+
+/* =====================================
+   work1 page PC (1280px)
+===================================== */
+@media screen and (min-width: 768px) {
+
+    /* ===== 共通 ===== */
+    .section__body {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* =============================
+     Intro
+  ============================= */
+    .section--intro {
+        padding-top: 40px;
+    }
+
+    .intro__header {
+        max-width: 1280px;
+        margin: 40px auto 0;
+    }
+
+    .intro__topic {
+        font-size: 3.2rem;
+    }
+
+    .intro__link {
+        font-size: 1.6rem;
+    }
+
+    .intro__detail {
+        max-width: 900px;
+        margin-top: 30px;
+    }
+
+    .intro__mv {
+        margin-top: 40px;
+    }
+
+    /* =============================
+     企業設定
+  ============================= */
+    .setting__list {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        column-gap: 40px;
+    }
+
+    .setting__list dt {
+        margin-top: 30px;
+    }
+
+    .setting__list dd {
+        margin-top: 30px;
+    }
+
+    /* =============================
+     事前調査
+  ============================= */
+    .survey__graphs {
+        display: flex;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .survey__graph {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .survey__graph .tmp {
+        height: 260px;
+    }
+
+    /* =============================
+     コンセプト
+  ============================= */
+    .concept__list {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        column-gap: 40px;
+    }
+
+    .concept__list dt,
+    .concept__list dd {
+        margin-top: 30px;
+    }
+
+    /* =============================
+     制作物
+  ============================= */
+    .work__content {
+        display: flex;
+        gap: 60px;
+        margin-top: 30px;
+        align-items: flex-start;
+    }
+
+    .work__content .tmp {
+        width: 420px;
+        height: 280px;
+        flex-shrink: 0;
+    }
+
+    .work__text {
+        margin-top: 0;
+    }
+
+    .work__remark {
+        margin-top: 20px;
+    }
+
+    /* =============================
+     制作物下部（補足）
+  ============================= */
+    .work__comments {
+        max-width: 900px;
+    }
+
+}

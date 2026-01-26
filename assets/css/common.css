@@ -17,8 +17,7 @@ body {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 1.4rem;
     color: #111;
-
-    line-height: var(--textHeight);
+    line-height: var(--txtHeight);
     background-color: #fff;
 }
 
@@ -50,15 +49,58 @@ img {
     color: var(--darkgray);
 }
 
+.detail__list--col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 6%;
+    align-items: flex-start;
+}
+
+.detail__topic--col {
+    width: 30%;
+    padding: 6px 0 6px 6px;
+    font-weight: 400;
+    color: #fff;
+    background-color: var(--darkgray);
+}
+
+.detail__body--col {
+    width: 64%;
+}
+
+/* pc用改行 */
+.pcbr {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     body {
         font-size: 2rem;
+    }
+
+    .detail__list--col {
+        gap: 30px 40px;
     }
 
     .detail__topic {
         margin-top: 40px;
         font-size: 2.0rem;
     }
+
+    .detail__topic--col {
+        padding: 8px 0 8px 10px;
+    }
+
+    /* スマホ用改行 */
+    .spbr {
+        display: none;
+    }
+
+    /* pc用改行 */
+    .pcbr {
+        display: block;
+    }
+
 }
 
 /* ========== header ========== */
@@ -154,6 +196,10 @@ img {
     border-left: 6px solid black;
 }
 
+.section__header--jp {
+    font-size: 2.0rem;
+}
+
 .section__body {
     margin-top: 40px;
 }
@@ -171,6 +217,10 @@ img {
         width: var(--contentWidth);
         margin: 0 auto;
         font-size: 4rem;
+    }
+
+    .section__header--jp {
+        font-size: 3.2rem;
     }
 
     .section__body {
