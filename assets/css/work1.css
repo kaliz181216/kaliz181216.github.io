@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* ========== Intro ========== */
+/* ========== intro ========== */
 .section--intro {
     padding-top: 50px;
 }
@@ -17,6 +17,10 @@
     font-size: 1.2rem;
     color: #666;
     word-break: break-all;
+}
+
+.intro__detail {
+    margin-top: 15px;
 }
 
 .intro__mv {
@@ -55,7 +59,7 @@
     }
 
     .intro__detail {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .intro__mv {
@@ -64,32 +68,34 @@
     }
 
     .intro__comments {
-        margin-top: 40px;
+        margin-top: 30px;
+    }
+}
+
+/* ========== setting ========== */
+.setting__img {
+    margin: 30px auto 0;
+}
+
+@media screen and (min-width: 768px) {
+    .setting__img {
+        margin: 40px auto 0;
+        max-width: 800px;
     }
 }
 
 /* ========== survey ========== */
 .detail__topic--survey {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .survey__graph {
-    margin-top: 30px;
-}
-
-.survey__graph .tmp {
-    height: 180px;
-}
-
-.survey__graphcaption {
-    margin-top: 10px;
-    font-size: 0.9rem;
+    margin-top: 25px;
 }
 
 .survey__graphref {
-    margin-top: 10px;
-    font-size: 0.9rem;
     color: var(--darkgray);
+    text-align: left;
 }
 
 .survey__wordtype {
@@ -98,8 +104,7 @@
 }
 
 .survey__worddetail {
-    margin-top: 8px;
-    color: #555;
+    margin-top: 5px;
 }
 
 .detail__body ul {
@@ -130,23 +135,18 @@
         width: 50%;
         margin-top: 0;
     }
-
-    .survey__graphcaption,
-    .survey__graphref {
-        font-size: 1.2rem;
-    }
 }
 
 /* ========== work ========== */
 .detail__topic--work {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .work__content {
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .work__image {
@@ -184,23 +184,16 @@
     width: 80%;
 }
 
-.work__icecaption {
-    font-size: 0.9rem;
-}
-
-.work__text--ai {
-    font-size: 1.4rem;
-}
-
 @media screen and (min-width: 768px) {
+    .detail__topic--work {
+        margin-top: 30px;
+    }
 
     .work__content,
     .work__content--ai {
         flex-direction: row;
         gap: 60px;
-        margin-top: 30px;
-        align-items: center;
-        justify-content: space-between;
+        margin-top: 20px;
     }
 
     .work__image {
@@ -229,10 +222,6 @@
         width: 400px;
     }
 
-    .work__icecaption {
-        font-size: 1.2rem;
-    }
-
     .work__remark {
         margin-top: 300px;
     }
@@ -242,4 +231,15 @@
 /* ========== thanks ========== */
 .thanks__name {
     margin-top: 5px;
+}
+
+.thanks__img {
+    margin: 25px auto 0;
+}
+
+@media screen and (min-width: 768px) {
+    .thanks__img {
+        margin: 40px auto 0;
+        max-width: 800px;
+    }
 }

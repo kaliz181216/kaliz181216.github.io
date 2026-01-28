@@ -15,12 +15,11 @@
   <meta property="og:site_name" content="kaliz181216">
   <meta property="og:image" content="https://kaliz181216.github.io/fictional_apple/assets/images/main-ogp.jpg">
 
-  <!-- favicon apple-touch-icon -->
-  <!--
+  <!-- favicon apple-touch-icon -->  
 	<link rel="shortcut icon" href="assets/images/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="assets/images/android-chrome-256x256.png">
--->
+
 
   <!-- web font Noto Serif JP, Lora -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +41,7 @@
         <a class="intro__link" href="https://kaliz181216.github.io/fictional_apple/" target="_blank"
           rel="noopener noreferrer">https://kaliz181216.github.io/fictional_apple/</a>
       </div>
-      <p class="intro__detail para-mt15">振津県輪呉市（ふるつけんりんごし）という架空の都市でりんごを生産、販売しているという設定の企業のホームページです。</p>
+      <p class="intro__detail">振津県輪呉市（ふるつけんりんごし）という架空の都市でりんごを生産、販売しているという設定の企業のホームページです。</p>
       <img class="intro__mv" src="assets/images/work1/apple_screenshot_pc.jpg" alt="企業デモサイト">
       <dl class="intro__comments">
         <!-- 対応範囲 -->
@@ -66,47 +65,36 @@
     <section class="section section--gray section--setting">
       <h2 class="section__header section__header--jp">企業設定</h2>
       <div class="section__body">
-        <dl class="detail__list--col">
-          <dt class="detail__topic--col">企業名</dt>
-          <dd class="detail__body--col">赤のひととき<br class="spbr">（英語名: apple tint）</dd>
-          <dt class="detail__topic--col">企業概要</dt>
-          <dd class="detail__body--col">
-            逢振（おうふる）という架空の銘柄の独自開発のりんごが主力商品。逢振の販売のほか、逢振の特徴を活かした商品展開をしている。近隣に観光地があることから、観光客向けに直営ショップを運営している。また、最近は販路拡大を目指し、通販にも力を入れている。生産地なので県内には他にもりんご農家がある設定。
-          </dd>
-          <dt class="detail__topic--col">商品</dt>
-          <dd class="detail__body--col">
-            逢振は独自開発なため品種としての希少性は高いが、大量生産できないことから価格が他の品種よりも高めであり、希少性だけでは競争力に欠ける。逢振は生食用としても加工品としても優れたりんごというコンセプトで作られた品種なため、加工がしやすい。
-          </dd>
-          <dt class="detail__topic--col">観光</dt>
-          <dd class="detail__body--col">
-            観光客向けに果樹園を開放している農家もあるが、逢振の栽培技術は社外秘なので解放する予定はない。直営ショップにおけるカフェ営業や土産物としての加工品販売で観光需要を取り込む。</dd>
-          <dt class="detail__topic--col">通販</dt>
-          <dd class="detail__body--col">大手通販サイトで販売している農家も多いが、直営ショップの宣伝も兼ね、自社サイトを運営している。</dd>
-        </dl>
+        <dl id="setting__details" class="detail__list--col"></dl>
+        <div class="setting__img">
+          <img src="assets/images/work1/position.png" alt="ポジショニングマップ">
+          <p class="imgcaption">他の品種と比較した場合の逢振の市場での立ち位置の概念図</p>
+        </div>
       </div>
     </section>
 
     <section class="section section--survey">
       <h2 class="section__header section__header--jp">事前調査</h2>
       <div class="section__body">
+        <dl id="survey__details" class="survey__list"></dl>
         <dl class="survey__list">
           <dt class="detail__topic detail__topic--survey">消費者層調査</dt>
           <dd class="detail__body">
-            <p>通販による販売ルートに力を入れている設定なため、まずは通信販売の利用者層を調査しました。インターネットショッピングを年1回以上利用する人の割合は、図の通り、20代から40代が最も多くなっています。</p>
+            <p>通販による販売ルートに力を入れている設定なため、まずは通信販売の利用者層を調査しました。インターネットショッピングを年1回以上利用する人の割合は、図1の通り、20代から40代が最も多くなっています。</p>
             <p class="para-mt15">また、インターネットショッピング利用者の年間平均利用回数は10代が最も多く、以降、年齢が上がるごとに回数が減少していく傾向が見られます。
             </p>
             <div class="survey__graphs">
               <div class="survey__graph">
                 <img src="assets/images/work1/work1_graph1.png" alt="通販利用割合の推移">
-                <p class="survey__graphcaption">図1　インターネットショッピングを年1回以上利用する人の割合の推移</p>
-                <p class="survey__graphref">出典「生活者1万人アンケート（10回目）に見る日本人の価値観・消費行動の変化」<br class="pcbr">野村総合研究所　<br class="spbr"><a class="linkblue"
+                <p class="imgcaption">図1　インターネットショッピングを年1回以上利用する人の割合の推移</p>
+                <p class="imgcaption survey__graphref">出典「生活者1万人アンケート（10回目）に見る日本人の価値観・消費行動の変化」　野村総合研究所　<a class="linkblue"
                     href="https://www.nri.com/jp/knowledge/report/2025forum384.html" target="_blank"
                     rel="noopener noreferrer">https://www.nri.com/jp/knowledge/report/2025forum384.html</a></p>
               </div>
               <div class="survey__graph">
                 <img src="assets/images/work1/work1_graph2.png" alt="通販利用回数の推移">
-                <p class="survey__graphcaption">図2　インターネットショッピング利用者の年間平均利用回数の推移</p>
-                <p class="survey__graphref">出典「生活者1万人アンケート（10回目）に見る日本人の価値観・消費行動の変化」<br class="pcbr">野村総合研究所　<br class="spbr"><a class="linkblue"
+                <p class="imgcaption survey__graphcaption">図2　インターネットショッピング利用者の年間平均利用回数の推移</p>
+                <p class="survey__graphref imgcaption">出典「生活者1万人アンケート（10回目）に見る日本人の価値観・消費行動の変化」　野村総合研究所　<a class="linkblue"
                     href="https://www.nri.com/jp/knowledge/report/2025forum384.html" target="_blank"
                     rel="noopener noreferrer">https://www.nri.com/jp/knowledge/report/2025forum384.html</a></p>
               </div>
@@ -193,14 +181,14 @@
               <div class="work__image work__image--ai">
                 <div class="work__iceimg">
                   <img src="assets/images/work1/work1_img1.jpg" alt="アイスカップ画像">
-                  <p class="work__icecaption">アイス画像の元となった写真</p>
+                  <p class="imgcaption">アイス画像の元となった写真</p>
                 </div>
                 <div class="work__iceimg">
                   <img class="work__imgwidth80" src="assets/images/work1/work1_img2.jpg" alt="制作中素材">
-                  <p class="work__icecaption">加工途中の画像</p>
+                  <p class="work__icecaption imgcaption">加工途中の画像</p>
                 </div>
               </div>
-              <div class="work__text work__text--ai">
+              <div>
                 <p>生成AIで画像生成をする際、プロンプトによる指示のみでイメージ通りの画像を生成することは困難な場合が多いため、アイス画像を生成する際の元となる画像として、撮影したアイスのカップの写真を使用しています。
                 </p>
                 <p class="para-mt15">効率的に作業を進めるためPhotoshopも活用しており、例の加工途中の画像ではアイスをスプーンで掬ったような跡をAdobe
@@ -227,13 +215,18 @@
           <li class="thanks__name">Nathan Hulsey 様</li>
           <li class="thanks__name">Novila Misastra 様</li>
         </ul>
+
+        <div class="thanks__img">
+          <img src="assets/images/work1/appendix.jpg" alt="商品パッケージ">
+          <p class="imgcaption">デザイン制作の参考にした商品パッケージ　合計約2700kcal!</p>
+        </div>
       </div>
     </section>
   </main>
   <footer id="footer" class="gfooter"></footer>
 
   <script type="module" src="assets/js/common.mjs"></script>
-  <!-- <script type="module" src="assets/js/top.mjs"></script> -->
+  <script type="module" src="assets/js/work1/w1main.mjs"></script>
 </body>
 
 </html>

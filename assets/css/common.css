@@ -36,6 +36,13 @@ img {
     margin-top: 15px;
 }
 
+/* 図キャプションフォントサイズ */
+.imgcaption{
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
 /* dl dt dd */
 .detail__topic {
     margin-top: 20px;
@@ -76,6 +83,10 @@ img {
 @media screen and (min-width: 768px) {
     body {
         font-size: 2rem;
+    }
+
+    .imgcaption{
+        font-size: 1.2rem;
     }
 
     .detail__list--col {
