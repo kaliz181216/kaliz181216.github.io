@@ -36,13 +36,6 @@ img {
     margin-top: 15px;
 }
 
-/* 図キャプションフォントサイズ */
-.imgcaption{
-    margin-top: 10px;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
 /* dl dt dd */
 .detail__topic {
     margin-top: 20px;
@@ -83,10 +76,6 @@ img {
 @media screen and (min-width: 768px) {
     body {
         font-size: 2rem;
-    }
-
-    .imgcaption{
-        font-size: 1.2rem;
     }
 
     .detail__list--col {
@@ -252,5 +241,75 @@ img {
     .gfooter {
         padding: 20px 50px;
         font-size: 1.5rem;
+    }
+}
+
+/* ========== imgmodal ========== */
+.img__caption{
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.modal__container{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(60,60,60,0.4);
+}
+
+.modal__header{
+    text-align: right;
+}
+
+.modal__close{
+    margin: 50px 30px;
+}
+
+.modal__close img{
+    width: 100%;
+}
+
+.modal__item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+
+.modal__item img{
+    width: 100%;
+}
+
+.imgtr-enter-from,
+.imgtr-leave-to {
+    opacity: 0;
+}
+
+.imgtr-enter-active,
+.imgtr-leave-active,
+.imgtr-enter-active .modal__item,
+.imgtr-leave-active .modal__item{
+    transition: all 1s;
+}
+
+.imgtr-enter-from .modal__item,
+.imgtr-leave-to .modal__item {
+    width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+    .img__caption{
+        font-size: 1.2rem;
+    }
+
+    .modal__item{
+        width: 80%;
     }
 }

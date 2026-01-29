@@ -148,6 +148,11 @@
 .works__link {
   display: block;
   box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.8);
+  transition: all 0.5s;
+}
+
+.works__link:hover{
+  transform: scale(1.03);
 }
 
 .works__topic {

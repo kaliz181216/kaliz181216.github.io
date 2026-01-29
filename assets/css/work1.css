@@ -107,13 +107,13 @@
     margin-top: 5px;
 }
 
-.detail__body ul {
+.survey__targetlist {
     margin-top: 15px;
     padding-left: 20px;
     list-style-type: disc;
 }
 
-.detail__body li {
+.survey__targetlist li {
     margin-top: 8px;
 }
 

@@ -26,5 +26,3 @@ export default {
         </dd>
     `
 }
-
-// about 段落クラス共通化　detailitem indexに実装
