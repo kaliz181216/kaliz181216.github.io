@@ -46,7 +46,7 @@ export default {
     },
     template: `
         <section-item>
-            <template #header>Skills</template>
+            <template #header><span id="skills">Skills</span></template>
             <template #body>
                 <div class="section__body--skills">
                     <div v-for="skillitem in skillsdetails" class="skills__content">

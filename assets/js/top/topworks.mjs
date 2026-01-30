@@ -12,7 +12,7 @@ export default {
             {
                 id: 1,
                 topic: '企業デモサイト',
-                link: 'fictional_apple/',
+                link: 'work1.html',
                 img: 'assets/images/work1/apple_screenshot_pc.jpg',
                 description: '架空の企業のWebサイト。ネット通販の拡大や直営ショップへの集客が目的という設定で作成しました。',
                 tags: ['HTML/CSS','JavaScript']
@@ -33,11 +33,11 @@ export default {
     },
     template: `
         <section-item isgray>
-            <template #header>Works</template>
+            <template #header><span id="works">Works</span></template>
             <template #body>
                 <div class="section__body--works">
                     <article v-for="work in worklist" class="works__article">
-                        <a class="works__link" :href="work.link" target="_blank" rel="noopener noreferrer"><img :src="work.img" :alt="work.topic"></a>
+                        <a class="works__link" :href="work.link"><img :src="work.img" :alt="work.topic"></a>
                         <h3 class="works__topic">{{work.topic}}</h3>
                         <p>{{work.description}}</p>
                         <ul class="works__tags">

@@ -17,7 +17,9 @@ export default {
                         </template>
                         <template #body>
                             <div class="work__content">
-                                <img class="work__image" src="assets/images/work1/apple_screenshot_sp.jpg" alt="スマホ版デモサイトイメージ">
+                                <div class="work__image">
+                                  <img src="assets/images/work1/apple_screenshot_sp.jpg" alt="スマホ版デモサイトイメージ">
+                                </div>
                                 <div class="work__text">
                                     <p>メインビジュアルは生産地の果樹園で撮影した設定の写真としており、クリック時にStoryのセクションに移動するようになっています。</p>
                                     <p class="work__remark">農産物のページであることから、装飾や企業ロゴは植物の葉や実を模った模様とし、全体の雰囲気を損なわないように控えめなデザインとしました。</p>
@@ -31,7 +33,9 @@ export default {
                         </template>
                         <template #body>
                             <div class="work__content">
-                                <img class="work__image" src="assets/images/work1/sns-sp.jpg" alt="スマホ版SNS宣伝バナー">
+                                <div class="work__image">
+                                    <img src="assets/images/work1/sns-sp.jpg" alt="スマホ版SNS宣伝バナー">
+                                </div>
                                 <div class="work__text">
                                     <p>メインビジュアルで表示されるSNSバナーは全体の雰囲気とあわせて赤をベースにしつつも、気軽に投稿できるようにややポップなデザインにしました。本ページのフォントはセリフ体を使っていますが、このバナーのみサンセリフ体にしています。
                                     </p>
@@ -46,7 +50,7 @@ export default {
                         </template>
                         <template #body>
                             <div class="work__content work__content--ai">
-                                <div class="work__image work__image--ai">
+                                <div class="work__image--ai">
                                     <div class="work__iceimg">
                                         <img src="assets/images/work1/work1_img1.jpg" alt="アイスカップ画像">
                                         <p class="img__caption">アイス画像の元となった写真</p>

@@ -150,10 +150,15 @@
 }
 
 .work__image {
-    width: 50%;
+    flex: 1;
+}
+
+.work__image img{
+    width: 100%;
 }
 
 .work__text {
+    flex: 1;
     font-size: 1.2rem;
 }
 
