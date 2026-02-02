@@ -16,7 +16,7 @@ html {
 body {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 1.4rem;
-    color: #111;
+    color: #000;
     line-height: var(--txtHeight);
     background-color: #fff;
 }
@@ -133,6 +133,17 @@ img {
     margin: 15px 20px;
     font-size: 2.0rem;
     font-weight: 500;
+    color: var(--darkgray);
+}
+
+.nav__item a{
+    padding: 4px 8px;
+    transition: all 0.4s;
+}
+
+.nav__item a:hover{
+    color: var(--lightgray);
+    background-color: #000;
 }
 
 .nav__modal {
@@ -171,7 +182,7 @@ img {
 
     .nav__list {
         display: flex;
-        gap: 50px;
+        gap: 40px;
         margin-top: 0;
     }
 
